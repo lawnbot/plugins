@@ -10,6 +10,8 @@ dependencies:
   cupertino_icons: ^0.1.0
   google_maps_flutter:
     path: ../
+  google_maps_flutter_web:
+    path: ../../google_maps_flutter_web
   flutter_plugin_android_lifecycle: ^1.0.0
 
 dev_dependencies:
