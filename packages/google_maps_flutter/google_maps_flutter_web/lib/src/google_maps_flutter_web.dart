@@ -374,14 +374,14 @@ class GoogleMapsPlugin extends GoogleMapsFlutterPlatform {
       Map<String, dynamic> creationParams,
       Set<Factory<OneSequenceGestureRecognizer>> gestureRecognizers,
       PlatformViewCreatedCallback onPlatformViewCreated) {
-    int mapId = creationParams['creationMapId'];
-    creationParams.remove('creationMapId');
+    int mapId = creationParams['_web_only_mapCreationId'];
+    creationParams.remove('_web_only_mapCreationId');
 
     if (mapId == null) {
       throw PlatformException(
         code: 'maps_web_missing_creation_map_id',
         message:
-            'Pass a `creationMapId` in creationParams to prevent reloads in web.',
+            'Pass a `_web_only_mapCreationId` in creationParams to prevent reloads in web.',
       );
     }
 
